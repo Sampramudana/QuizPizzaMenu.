@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L9L-CV-CCc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Custom Cell Table View Controller-->
+        <scene sceneID="pwU-8O-Geo">
+            <objects>
+                <tableViewController id="L9L-CV-CCc" customClass="CustomCellTableViewController" customModule="QuizPizzaMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="B2b-LM-DHe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellPizza" rowHeight="119" id="SSd-Q6-Zej" customClass="PizzaTableViewCell" customModule="QuizPizzaMenu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="119"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SSd-Q6-Zej" id="31o-TI-Kui">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBQ Chicken Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3C-hE-MI3">
+                                            <rect key="frame" x="8" y="30" width="169" height="23"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="23" id="52J-8H-epg"/>
+                                                <constraint firstAttribute="width" constant="169" id="hed-CJ-3Xb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBO-8X-L43">
+                                            <rect key="frame" x="307" y="32" width="60" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="jwU-rb-JKb"/>
+                                                <constraint firstAttribute="height" constant="21" id="lEa-vh-xa2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Regular Price $ 11.49" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HG-pB-Vpg">
+                                            <rect key="frame" x="8" y="76" width="148" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="148" id="0Ym-DI-ifd"/>
+                                                <constraint firstAttribute="height" constant="18" id="uqJ-aG-87X"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 10.34 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOj-QJ-MT6">
+                                            <rect key="frame" x="296" y="75" width="71" height="23"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="71" id="qAo-KQ-fSZ"/>
+                                                <constraint firstAttribute="height" constant="23" id="tbm-Ba-mm8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2HG-pB-Vpg" firstAttribute="leading" secondItem="31o-TI-Kui" secondAttribute="leadingMargin" id="0Ve-0i-EJI"/>
+                                        <constraint firstItem="2HG-pB-Vpg" firstAttribute="top" secondItem="h3C-hE-MI3" secondAttribute="bottom" constant="23" id="3pb-os-n66"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bOj-QJ-MT6" secondAttribute="bottom" constant="12.5" id="AVg-cC-bga"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2HG-pB-Vpg" secondAttribute="bottom" constant="16.5" id="HQq-bf-pSn"/>
+                                        <constraint firstItem="ZBO-8X-L43" firstAttribute="leading" secondItem="h3C-hE-MI3" secondAttribute="trailing" constant="130" id="JaA-Wc-QSB"/>
+                                        <constraint firstItem="h3C-hE-MI3" firstAttribute="top" secondItem="31o-TI-Kui" secondAttribute="topMargin" constant="22" id="OYH-oR-raH"/>
+                                        <constraint firstItem="bOj-QJ-MT6" firstAttribute="top" secondItem="ZBO-8X-L43" secondAttribute="bottom" constant="22" id="QWj-5Y-Y4B"/>
+                                        <constraint firstItem="bOj-QJ-MT6" firstAttribute="leading" secondItem="2HG-pB-Vpg" secondAttribute="trailing" constant="140" id="S9v-8U-b2g"/>
+                                        <constraint firstItem="bOj-QJ-MT6" firstAttribute="leading" secondItem="2HG-pB-Vpg" secondAttribute="trailing" constant="140" id="T85-2a-42G"/>
+                                        <constraint firstItem="ZBO-8X-L43" firstAttribute="trailing" secondItem="31o-TI-Kui" secondAttribute="trailingMargin" id="fic-We-RoC"/>
+                                        <constraint firstItem="2HG-pB-Vpg" firstAttribute="top" secondItem="h3C-hE-MI3" secondAttribute="bottom" constant="23" id="hKl-Up-iqT"/>
+                                        <constraint firstItem="ZBO-8X-L43" firstAttribute="top" secondItem="31o-TI-Kui" secondAttribute="topMargin" constant="24" id="lRj-6f-JG3"/>
+                                        <constraint firstItem="ZBO-8X-L43" firstAttribute="leading" secondItem="h3C-hE-MI3" secondAttribute="trailing" constant="130" id="lkb-YB-qNF"/>
+                                        <constraint firstItem="bOj-QJ-MT6" firstAttribute="top" secondItem="ZBO-8X-L43" secondAttribute="bottom" constant="22" id="n9u-BJ-6le"/>
+                                        <constraint firstItem="h3C-hE-MI3" firstAttribute="leading" secondItem="31o-TI-Kui" secondAttribute="leadingMargin" id="sUk-r5-M36"/>
+                                        <constraint firstItem="bOj-QJ-MT6" firstAttribute="trailing" secondItem="31o-TI-Kui" secondAttribute="trailingMargin" id="w3o-7d-XOU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelAwal" destination="2HG-pB-Vpg" id="vjR-lu-isq"/>
+                                    <outlet property="labelHarga" destination="bOj-QJ-MT6" id="Wjz-gI-DE2"/>
+                                    <outlet property="labelJudul" destination="h3C-hE-MI3" id="C5n-am-0LP"/>
+                                    <outlet property="labelSpecial" destination="ZBO-8X-L43" id="Wqe-ba-kJZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="L9L-CV-CCc" id="FeY-Aw-f6S"/>
+                            <outlet property="delegate" destination="L9L-CV-CCc" id="sd3-7z-f7g"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBv-mY-SH4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.60000000000002" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
